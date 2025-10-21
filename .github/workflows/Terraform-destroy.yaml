@@ -3,6 +3,11 @@ name: Terraform Destroy
 on:
   workflow_dispatch:
     branches: [ "main" ]
+    inputs:
+      confirm_destroy:
+        description: 'Type "destroy" to confirm'
+        required: true
+        default: ''
 
 env:            
   AWS_REGION: us-east-1
