@@ -4,9 +4,8 @@ provider "aws" {
 
 resource "aws_s3_bucket" "jibin-bucket" {
   bucket = "jibin-s3.1-bucket989"  #Use a globally unique name
-  acl = "private"
+  acl = "public"
 }
-
 
 # terraform {
 #  backend "s3" {
